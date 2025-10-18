@@ -1,16 +1,11 @@
 #This function is used to generate a rotor.
-def rg(key):#"key"must be a string!Must be a 26-character string
-    if len(key)!=26:
-        raise ValueError("Input must be a string of length 26.")
+def RG(strs,*,types=False):#"key"must be a string!Must be a 26-character string
     rotor={}
-    for i in range(26):
-        rotor[chr(i+97)]=key[i]
+    if types==True:
+        for i in range(26):
+            rotor[chr(i+97)]=strs[i]
+    else:
+        for i in range(26):
+            rotor[chr(i+65)]=strs[i]
     return rotor
 
-def RG(key):#"key"must be a string!Must be a 26-character string
-    if len(key)!=26:
-        raise ValueError("Input must be a string of length 26.")
-    rotor={}
-    for i in range(26):
-        rotor[chr(i+65)]=key[i]
-    return rotor
