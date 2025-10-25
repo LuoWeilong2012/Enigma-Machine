@@ -1,2 +1,2 @@
 # Enigma-Machine
-A programming work modeled on the classic Enigma machine of the German Army.Using English as an example
+一个用Python编写的Enigma机的GUI程序，以English演示语言
